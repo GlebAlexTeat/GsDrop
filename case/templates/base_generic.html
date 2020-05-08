@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru-eu">
 <head>
-  {% block title %}<title>GScase</title>{% endblock %}
+  {% block title %}<title>GsDrop</title>{% endblock %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -14,7 +14,10 @@
 
 <body>
   {% load static %}
-  {% block sidebar %}<!-- insert default navigation text for every page -->{% endblock %}
+  {% block header %}
+  {% endblock %}
+  {% block livedrop %}
+  {% endblock %}
   {% block content %}<!-- default content text (typically empty) -->{% endblock %}
 </body>
 </html>
