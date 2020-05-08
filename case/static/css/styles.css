@@ -12,3 +12,70 @@ color: darkmagenta;
 #test2{
 color:red;
 }
+.hrtophead{
+    color: chocolate;
+    margin-top: 0%;
+}
+.hrdownhead{
+    color: chocolate;
+    margin-top: 9%;
+    
+}
+.header{
+    height: 100%;
+    width: 100%;
+}
+.logo{
+    height: 125px;
+    width: 360px;
+    background-image: url(../case/images/logo.png);
+    border: none;
+    float: left;
+    white-space: nowrap;
+}
+.headerlogin{
+    float: right;
+    margin-right: 7%;
+    white-space:nowrap;
+    margin-top: 2%;
+
+}
+a.button10 {
+    display: inline-block;
+    color: black;
+    font-size: 125%;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .25em .5em;
+    outline: none;
+    border: 1px solid rgb(250,172,17);
+    border-radius: 7px;
+    background: rgb(255,212,3) linear-gradient(rgb(255,212,3), rgb(248,157,23));
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,0);
+    transition: box-shadow .2s, border-color .2s;
+  }
+  a.button10:hover {
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,.5);
+  }
+  a.button10:active {
+    padding: calc(.25em + 1px) .5em calc(.25em - 1px);
+    border-color: rgba(177,159,0,1);
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 2px rgba(0,0,0,.3), inset 0 0 0 60px rgba(255,255,0,.45);
+  }
+  .livedroptop{
+      margin-top: 5px;
+      color: rgb(218, 165, 32);
+      width: 100%;
+  }
+  .livedropdown{
+    margin-top: 3%;
+    color: red;
+    width: 100%;
+}
+.livedropback{
+    background-image: url(../case/images/livedrop.jpg);
+    height: 60px;
+    width: 100%;
+}
+
