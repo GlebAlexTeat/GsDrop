@@ -1,0 +1,14 @@
+* {
+color:#FFF ;
+}
+body {
+height: 100%;
+width: 100%;
+background-image: url(../case/images/background.jpg);
+}
+h1.test1 {
+color: darkmagenta;
+}
+#test2{
+color:red;
+}
