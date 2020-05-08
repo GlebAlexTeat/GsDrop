@@ -1,15 +1,22 @@
 {% extends "base_generic.html" %}
-
-{% block content %}
-<h1 class='test1'>CScase</h1>
-<h1>CScase</h1>
-<p>Welcome to <em>LocalLibrary</em>, a very basic Django website developed as a tutorial example on the Mozilla Developer Network.</p>
-{%for gun in guns %}
-<div>
-    <p> {{gun.title_gun}} </p>
-    <p id='test2'> {{gun.value}} </p>
+{% block header %}
+<div class="header">
+    <hr class="hrtophead">
+    <div class="divlogo"><a href=""><img class="logo"></a></div>
+    <p class="headerlogin">Аккаунт:<a href="#" class="button10">Войти</a></p>
+    <hr class="hrdownhead">
 </div>
-{% endfor %}
-{% load static %}
+{% endblock %}
+{% block livedrop %}
+
+<div class="livedropback">
+    <hr class="livedroptop">
+    <hr class="livedropdown">
+</div>
 
 {% endblock %}
+
+
+
+{% load static %}
+
