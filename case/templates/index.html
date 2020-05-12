@@ -1,12 +1,228 @@
 {% extends "base_generic.html" %}
-
-{% block content %}
-<h1>CScase</h1>
-<p>Welcome to <em>LocalLibrary</em>, a very basic Django website developed as a tutorial example on the Mozilla Developer Network.</p>
-{%for gun in guns %}
-<div>
-    <p> {{gun.title_gun}} </p>
-    <p> {{gun.value}} </p>
+{% block header %}
+<div class="header">
+    <div class="logo_box_flex">
+        <div class="Logo_box">
+            <div class="Logo">
+                <a href=""><img class="logo"></a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="login_box_flex">
+        <div class="login_box">
+            <div class="login">
+                <p ><a href="#" class="button10">Авторизация</a></p>
+            </div>
+            
+        </div>
+    </div>  
 </div>
-{% endfor %}
 {% endblock %}
+{% block content %}
+<div class="content">
+    <div class="livedrop">
+    </div>
+    <div class="case_main_big_box">
+        <div class="case_title_flex">
+            <div class="case_title">
+                <p>КЕЙСЫ ПО РАРИТЕТНОСТИ</p>
+            </div>
+        </div>
+        <div class="cases">
+            <div class="case_box">
+                <div class="case_army">
+                 </div>
+                 <div>
+                     <P class="case_text">Случайное армейское</P>
+                 </div>
+            </div>
+            <div class="case_box">
+                <div class="case_zap">
+                </div>
+                <div>
+                    <P class="case_text">Случайное запрещенное</P>
+                </div>
+            </div>
+            <div class="case_box">
+                <div class="case_zas">
+                </div>
+                <div>
+                    <P class="case_text">Случайное засекреченное</P>
+                </div>
+            </div>
+            <div class="case_box">
+                <div class="case_tain">
+                </div>
+                <div>
+                    <P class="case_text">Случайное тайное</P>
+                </div>
+            </div>
+            <div class="case_box">
+                <div class="case_knife">
+                </div>
+                <div>
+                    <P class="case_text">Случайный нож</P>
+                </div>
+            </div>  
+        </div>
+        <div class="case_title_flex">
+            <div class="case_title">
+                <p>СТАНДАРТНЫЕ КЕЙСЫ</p>
+            </div>
+        </div>
+        <div class="cases">
+            <div class="case_box">
+                <div class="case_prizma2">
+                </div>
+                <div>
+                    <P class="case_text">Prisma2 </P>
+                </div>
+            </div>
+            <div class="case_box">
+                <div class="case_clutch">
+                </div>
+                <div>
+                    <P class="case_text">Clutch </P>
+                </div>
+                
+            </div>
+            <div class="case_box">
+                <div class="case_prizma">
+                </div>
+                <div>
+                    <P class="case_text">Prisma </P>
+                </div>
+                
+            </div>
+            <div class="case_box">
+                <div class="case_horizon">
+                </div>
+                <div>
+                    <P class="case_text">Horizon </P>
+                </div>
+                
+            </div>
+            <div class="case_box">
+                <div class="case_danger_zone">
+                </div>
+                <div>
+                    <P class="case_text">Danger Zone </P>
+                </div>
+                
+             </div>
+             <div class="case_box">
+                <div class="case_raskol">
+                </div>
+                <div>
+                    <P class="case_text">Расколотая сеть </P>
+                </div>
+
+            </div>
+            <div class="case_box">
+                <div class="case_cs20">
+                </div>
+                <div>
+                    <P class="case_text">Cs:20 </P>
+                </div>
+                
+            </div>
+            <div class="case_box">
+                <div class="case_gamma">
+                </div>
+                <div>
+                    <P class="case_text">Gamma </P>
+                </div>
+                
+            </div>
+            <div class="case_box">
+                <div class="case_gamma2">
+                </div>
+                <div>
+                    <P class="case_text">Gamma 2 </P>
+                </div>
+                
+            </div>
+            <div class="case_box">
+                <div class="case_glove">
+                </div>
+                <div>
+                    <P class="case_text">Glove </P>
+                </div>
+                
+             </div>
+        </div>
+        <div class="case_title_flex">
+            <div class="case_title">
+                <p>КОЛЛЕКЦИИ</p>
+            </div>
+        </div>
+        <div class="cases">
+                 <div class="case_box">
+                    <div class="case_gamma2">
+                    </div>
+                    <div>
+                        <P class="case_text">Gamma 2 </P>
+                    </div>
+                 </div>
+                  <div class="case_box">
+                    <div class="case_gamma2">
+                    </div>
+                    <div>
+                        <P class="case_text">Gamma 2 </P>
+                    </div>
+                </div> 
+                <div class="case_box">
+                    <div class="case_gamma2">
+                    </div>
+                    <div>
+                        <P class="case_text">Gamma 2 </P>
+                    </div>
+                </div> 
+                <div class="case_box">
+                    <div class="case_gamma2">
+                    </div>
+                    <div>
+                        <P class="case_text">Gamma 2 </P>
+                    </div>
+                </div>
+                <div class="case_box">
+                    <div class="case_gamma2">
+                    </div>
+                    <div>
+                        <P class="case_text">Gamma 2 </P>
+                    </div>
+                </div> 
+                <div class="case_box">
+                    <div class="case_gamma2">
+                    </div>
+                    <div>
+                        <P class="case_text">Gamma 2 </P>
+                    </div>
+                </div> 
+                <div class="case_box">
+                    <div class="case_gamma2">
+                    </div>
+                    <div>
+                        <P class="case_text">Gamma 2 </P>
+                    </div>
+                </div>
+                <div class="case_box">
+                    <div class="case_gamma2">
+                    </div>
+                    <div>
+                        <P class="case_text ">Gamma 2 </P>
+                    </div>
+                </div>
+        </div>
+    
+    
+</div>
+
+
+{% endblock %}
+
+
+
+{% load static %}
+
