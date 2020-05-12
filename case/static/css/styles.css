@@ -14,13 +14,20 @@ body {
     width: 100%;
     background-color: burlywood;
     display: flex;
+    flex-wrap: wrap;
+}
+.logo_box_flex{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
 }
 .Logo_box{
     height: 80%;
-    width: 20%;
+    width: 100%;
     float: left;
     /* background-color: green; */
-    margin: 20px 57% 0px 15px;
+    margin: 20px 0px 0px 15px;
 }
 .Logo{
     height: 100%;
@@ -28,6 +35,12 @@ body {
     background-image: url(../case/images/logo.png) ;
     background-repeat: no-repeat;
     white-space: nowrap;
+}
+.login_box_flex{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
 }
 .login_box{
     height: 80%;
@@ -41,6 +54,7 @@ body {
     float: right;
     margin-top: 5% ;
 }
+
 a.button10 {
     display: inline-block;
     color: black;
@@ -81,6 +95,9 @@ a.button10 {
     margin-left: 5%;
     margin-right: 5%;
     background-color: tomato;
+    display:flex;
+    flex-direction:column;
+
 }
 .case_title_flex{
     display: flex;
@@ -93,19 +110,23 @@ a.button10 {
 }
 .cases{
     width: 100%;
-    height: 600px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    min-height: 300px;
+    max-height: 2000px;
 }
 .case_box{
     max-height: 250px;
-    min-width: 18%;
+    min-width: 256px;
     max-width: 20%;
     flex-grow:1;
     margin: 10px;
     background-color: #777777;
     
+}
+.case_text{
+    text-align:center;
 }
 .case_army{
     margin: 0 auto;
@@ -113,38 +134,30 @@ a.button10 {
     width: 256px;
     background-image: url(../case/images/army.png);
 }
-.army_text{
-    margin: 10px 0px 0px 80px;
-}
+
 .case_zap{
     margin: 0 auto;
     height: 198px;
     width: 256px;
     background-image: url(../case/images/zap.png);
 }
-.zap_text{
-    margin: 10px 0px 0px 80px;
-}
+
 .case_zas{
     margin: 0 auto;
     height: 198px;
     width: 256px;
-    margin-top: 10px;
+
     background-image: url(../case/images/zas.png);
 }
-.zas_text{
-    margin: 0px 0px 0px 80px;
-}
+
 .case_tain{
     margin: 0 auto;
     height: 198px;
     width: 256px;
-    margin-top: 15px;
+
     background-image: url(../case/images/tain.png);
 }
-.tain_text{
-    margin: 0px 0px 0px 100px;
-}
+
 .case_knife{
     margin: 0 auto;
     height: 198px;
@@ -152,9 +165,7 @@ a.button10 {
     margin-top: 15px;
     background-image: url(../case/images/knife.png);
 }
-.knife_text{
-    margin: 0px 0px 0px 110px;
-}
+
 .case_prizma2{
     margin: 0 auto;
     height: 198px;
@@ -162,9 +173,7 @@ a.button10 {
     margin-top: 15px;
     background-image: url(../case/images/case/prisma-2-case.png);
 }
-.prizma2_text{
 
-}
 .case_prizma{
     margin: 0 auto;
     height: 198px;
@@ -172,9 +181,7 @@ a.button10 {
     margin-top: 15px;
     background-image: url(../case/images/case/prisma-case.png);
 }
-.prizma_text{
 
-}
 .case_clutch{
     margin: 0 auto;
     height: 198px;
@@ -182,9 +189,7 @@ a.button10 {
     margin-top: 15px;
     background-image: url(../case/images/case/Clutch-case.png);
 }
-.clutch_text{
 
-}
 .case_horizon{
     margin: 0 auto;
     height: 198px;
@@ -192,9 +197,7 @@ a.button10 {
     margin-top: 15px;
     background-image: url(../case/images/case/horizon-case.png);
 }
-.horizon_text{
 
-}
 .case_danger_zone{
     margin: 0 auto;
     height: 198px;
@@ -202,9 +205,7 @@ a.button10 {
     margin-top: 15px;
     background-image: url(../case/images/case/danger-zone-case.png);
 }
-.danger_zone_text{
 
-}
 .case_raskol{
     margin: 0 auto;
     height: 198px;
@@ -212,9 +213,7 @@ a.button10 {
     margin-top: 15px;
     background-image: url(../case/images/case/raskol-case.png);
 }
-.raskol_text{
 
-}
 .case_cs20{
     margin: 0 auto;
     height: 198px;
@@ -222,9 +221,7 @@ a.button10 {
     margin-top: 15px;
     background-image: url(../case/images/case/cs20-case.png);
 }
-.cs20_text{
 
-}
 .case_gamma2{
     margin: 0 auto;
     height: 198px;
@@ -232,9 +229,7 @@ a.button10 {
     margin-top: 15px;
     background-image: url(../case/images/case/gamma2-case.png);
 }
-.gamma2_text{
 
-}
 .case_gamma{
     margin: 0 auto;
     height: 198px;
@@ -242,9 +237,7 @@ a.button10 {
     margin-top: 15px;
     background-image: url(../case/images/case/gamma-case.png);
 }
-.gamma_text{
 
-}
 .case_glove{
     margin: 0 auto;
     height: 198px;
@@ -252,9 +245,7 @@ a.button10 {
     margin-top: 15px;
     background-image: url(../case/images/case/glove-case.png);
 }
-.glove_text{
 
-}
 /* .hrtophead{
     color: chocolate;
     margin-top: 0%;
