@@ -9,6 +9,13 @@ def index(request):
    guns = Gun.objects.all()
    context={'guns':guns}
    return HttpResponse(template.render(context,request))
+
+def regestr(request):
+   template = loader.get_template('regestr.html')
+   users = Users.objects.all()
+   guns = Gun.objects.all()
+   context={'users': users, 'guns':guns}
+   return HttpResponse(template.render(context,request))
  
 # Create your views here.
 #    guns_list = Gun.objects.order_by('-title_gun')

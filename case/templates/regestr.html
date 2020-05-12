@@ -1,0 +1,41 @@
+{% extends "base_generic.html" %}
+<!-- {% block header %}
+<div class="header">
+    <div class="logo_box_flex">
+        <div class="Logo_box">
+            <div class="Logo">
+                <a href=""><img class="logo"></a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="login_box_flex">
+        <div class="login_box">
+            <div class="login">
+                <p ><a href="#" class="button10">Авторизация</a></p>
+            </div>
+            
+        </div>
+    </div>  
+</div>
+{% endblock %} -->
+
+{% block content %}
+{%for gun in guns %}
+<div class="TEXT_TEST">
+<p> {{gun.title_gun}} </p>
+<p> {{gun.value}} </p>
+<p> {{gun.quality}} </p>
+</div>
+{% endfor %}
+{%for user in users %}
+<div class="TEXT_TEST">
+<p> {{user.Name}} </p>
+<p> {{user.Money}} </p>
+<p> {{user.Admin}} </p>
+</div>
+{% endfor %}
+
+{% endblock %}
+
+{% load static %}

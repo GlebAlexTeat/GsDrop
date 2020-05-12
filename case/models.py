@@ -5,6 +5,12 @@ class Users(models.Model):
     Name = models.CharField(max_length=20, help_text="Enter field documentation")
     Money = models.DecimalField(max_digits=6, decimal_places=2)
     Admin = models.BooleanField(default=False)
+    Pass = models.CharField(max_length=20, help_text="Pass word",null=True)
+    Email = models.EmailField(max_length=120, help_text="email adress", null=True)
+    Icon = models.CharField(max_length=100, help_text="Enter field documentation", null=True)
+    Rang = models.DecimalField(max_digits=3, decimal_places=2,  null=True)
+    Cance = models.DecimalField(max_digits=2, decimal_places=2,  null=True)
+    User_Gun = models.TextField(help_text='Enter gun piy piy', null=True)
     class Meta: 
         ordering = ["-Name"]
 

@@ -1,2 +1,19 @@
 Саня ты в порядке ты в порядке саня 
 https://www.youtube.com/watch?v=aR7Vj6MRooo
+    Pass = models.CharField(max_length=20, help_text="Pass word",null=True)
+    Email = models.EmailField(max_length=120, help_text="email adress", null=True)
+    Icon = models.CharField(max_length=100, help_text="Enter field documentation", null=True)
+    Rang = models.DecimalField(max_digits=3, decimal_places=2,  null=True)
+    Cance = models.DecimalField(max_digits=1, decimal_places=2,  null=True)
+    User_Gun = models.TextField(help_text='Enter gun piy piy', null=True)
+
+
+
+
+    {%for gun in guns %}
+<div>
+<p> {{gun.title_gun}} </p>
+<p> {{gun.value}} </p>
+<p> {{gun.quality}} </p>
+</div>
+{% endfor %}

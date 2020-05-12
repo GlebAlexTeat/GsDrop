@@ -245,7 +245,9 @@ a.button10 {
     margin-top: 15px;
     background-image: url(../case/images/case/glove-case.png);
 }
-
+.TEXT_TEST{
+    color: red;
+}
 /* .hrtophead{
     color: chocolate;
     margin-top: 0%;

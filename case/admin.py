@@ -5,7 +5,7 @@ from .models import Users, Gun, Case
 
 @admin.register(Users)
 class AuthorAdmin(admin.ModelAdmin):
-    list_display = ('Name', 'Money', 'Admin')
+    list_display = ('Name', 'Money', 'Admin','Email')
 
 @admin.register(Gun)
 class AuthorAdmin(admin.ModelAdmin):
