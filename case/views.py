@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Users, Gun, Case
+from .models import Profile, Gun, Case
 from django.http import HttpResponse
 from django.template import loader
 
@@ -12,7 +12,7 @@ def index(request):
 
 def regestr(request):
    template = loader.get_template('regestr.html')
-   users = Users.objects.all()
+   users = Profile.objects.all()
    guns = Gun.objects.all()
    context={'users': users, 'guns':guns}
    return HttpResponse(template.render(context,request))
