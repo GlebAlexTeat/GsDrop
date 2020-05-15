@@ -11,10 +11,19 @@
     </div>
     <div class="login_box_flex">
         <div class="login_box">
-            <div class="login">
-                <p ><a href="http://127.0.0.1:8000/case/regestr " class="button10">Авторизация</a></p>
-            </div>
+            <ul class="sidebar-nav">
+
+                
             
+               {% if user.is_authenticated %}
+                 <li>User: {{ user.get_username }}</li>
+                 <li><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>   
+               {% else %}   
+                 <div class="login">
+                    <p ><a href="{% url 'login'%}?next={{request.path}}" class="button10">Авторизация</a></p>
+                </div>
+               {% endif %} 
+              </ul>
         </div>
     </div>  
 </div>
